@@ -159,22 +159,22 @@ Partial Class TableauReservation
         Me.Label_4_2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label_4_2.AutoSize = True
         Me.Label_4_2.ForeColor = System.Drawing.Color.Red
-        Me.Label_4_2.Location = New System.Drawing.Point(277, 209)
+        Me.Label_4_2.Location = New System.Drawing.Point(278, 209)
         Me.Label_4_2.Name = "Label_4_2"
-        Me.Label_4_2.Size = New System.Drawing.Size(55, 16)
+        Me.Label_4_2.Size = New System.Drawing.Size(53, 16)
         Me.Label_4_2.TabIndex = 13
-        Me.Label_4_2.Text = "DUBUS"
+        Me.Label_4_2.Text = "Renault"
         '
         'Label_4_1
         '
         Me.Label_4_1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label_4_1.AutoSize = True
         Me.Label_4_1.ForeColor = System.Drawing.Color.Red
-        Me.Label_4_1.Location = New System.Drawing.Point(72, 209)
+        Me.Label_4_1.Location = New System.Drawing.Point(47, 209)
         Me.Label_4_1.Name = "Label_4_1"
-        Me.Label_4_1.Size = New System.Drawing.Size(59, 16)
+        Me.Label_4_1.Size = New System.Drawing.Size(110, 16)
         Me.Label_4_1.TabIndex = 12
-        Me.Label_4_1.Text = "Romane"
+        Me.Label_4_1.Text = "DUBUS Romane"
         '
         'Label_3_4
         '
@@ -200,21 +200,21 @@ Partial Class TableauReservation
         '
         Me.Label_3_2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label_3_2.AutoSize = True
-        Me.Label_3_2.Location = New System.Drawing.Point(275, 147)
+        Me.Label_3_2.Location = New System.Drawing.Point(271, 147)
         Me.Label_3_2.Name = "Label_3_2"
-        Me.Label_3_2.Size = New System.Drawing.Size(59, 16)
+        Me.Label_3_2.Size = New System.Drawing.Size(68, 16)
         Me.Label_3_2.TabIndex = 9
-        Me.Label_3_2.Text = "REGUIG"
+        Me.Label_3_2.Text = "Mercedes"
         '
         'Label_3_1
         '
         Me.Label_3_1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label_3_1.AutoSize = True
-        Me.Label_3_1.Location = New System.Drawing.Point(84, 147)
+        Me.Label_3_1.Location = New System.Drawing.Point(57, 147)
         Me.Label_3_1.Name = "Label_3_1"
-        Me.Label_3_1.Size = New System.Drawing.Size(35, 16)
+        Me.Label_3_1.Size = New System.Drawing.Size(90, 16)
         Me.Label_3_1.TabIndex = 8
-        Me.Label_3_1.Text = "Ilyes"
+        Me.Label_3_1.Text = "REGUIG Ilyes"
         '
         'Label_2_4
         '
@@ -240,21 +240,21 @@ Partial Class TableauReservation
         '
         Me.Label_2_2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label_2_2.AutoSize = True
-        Me.Label_2_2.Location = New System.Drawing.Point(277, 85)
+        Me.Label_2_2.Location = New System.Drawing.Point(285, 85)
         Me.Label_2_2.Name = "Label_2_2"
-        Me.Label_2_2.Size = New System.Drawing.Size(56, 16)
+        Me.Label_2_2.Size = New System.Drawing.Size(40, 16)
         Me.Label_2_2.TabIndex = 5
-        Me.Label_2_2.Text = "DUPHIL"
+        Me.Label_2_2.Text = "BMW"
         '
         'Label_2_1
         '
         Me.Label_2_1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label_2_1.AutoSize = True
-        Me.Label_2_1.Location = New System.Drawing.Point(81, 85)
+        Me.Label_2_1.Location = New System.Drawing.Point(55, 85)
         Me.Label_2_1.Name = "Label_2_1"
-        Me.Label_2_1.Size = New System.Drawing.Size(41, 16)
+        Me.Label_2_1.Size = New System.Drawing.Size(93, 16)
         Me.Label_2_1.TabIndex = 4
-        Me.Label_2_1.Text = "Laura"
+        Me.Label_2_1.Text = "DUPHIL Laura"
         '
         'Label_1_4
         '

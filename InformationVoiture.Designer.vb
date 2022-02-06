@@ -131,9 +131,9 @@ Partial Class InformationVoiture
         Me.Label12.AutoSize = True
         Me.Label12.Location = New System.Drawing.Point(63, 180)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(108, 16)
+        Me.Label12.Size = New System.Drawing.Size(120, 16)
         Me.Label12.TabIndex = 19
-        Me.Label12.Text = "Pièce Justificatif :"
+        Me.Label12.Text = "Pièce Justificative :"
         '
         'Label14
         '
@@ -190,7 +190,7 @@ Partial Class InformationVoiture
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ListBox1)
         Me.Name = "InformationVoiture"
-        Me.Text = "Form4"
+        Me.Text = "InformationVoiture"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -1,6 +1,6 @@
 ﻿Public Class ConfirmationLouée
     Private Sub ConfirmationLouée_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label1.Text = "Voulez vous passez en Loué ?"
+        Label1.Text = "Voulez vous passer en Loué ?"
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

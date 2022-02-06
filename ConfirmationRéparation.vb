@@ -1,6 +1,6 @@
 ﻿Public Class ConfirmationRéparation
     Private Sub Confirmation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label1.Text = "Voulez vous passez en Réparation ?"
+        Label1.Text = "Voulez vous passer en Réparation ?"
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -12,7 +12,7 @@
             Case EcranPrincipal.etat.Réparée
             Case EcranPrincipal.etat.ConfirmRéparée
                 EcranPrincipal.Label1.Text = "Réparation"
-                EcranPrincipal.Voiture1.Image = EcranPrincipal.ChangeOpacity(EcranPrincipal.VoitureOpacite.Image, 1)
+                EcranPrincipal.Voiture1.Image = EcranPrincipal.ChangeOpacity(EcranPrincipal.VoitureOpacite.Image, 0.5)
                 EcranPrincipal.Réparation1.Visible = True
                 InformationVoiture.TextBox1.Enabled = False
                 InformationVoiture.TextBox1.Text = ""

@@ -7,61 +7,50 @@
     End Sub
 
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
-        If ListBox1.SelectedItem = "Disponible" Then
 
-            Select Case EcranPrincipal.etatactuel
-                Case EcranPrincipal.etat.EcranPrincipal
-                Case EcranPrincipal.etat.EcranTableau
-                Case EcranPrincipal.etat.Disponible
-                Case EcranPrincipal.etat.ConfirmDisponible
-                Case EcranPrincipal.etat.Réparée
-                    EcranPrincipal.etatactuel = EcranPrincipal.etat.ConfirmDisponible
-                    EtatRetour = EcranPrincipal.etat.Réparée
-                    ConfirmationDisponible.Visible = True
-                Case EcranPrincipal.etat.ConfirmRéparée
-                Case EcranPrincipal.etat.Louée
-                    EcranPrincipal.etatactuel = EcranPrincipal.etat.ConfirmDisponible
-                    EtatRetour = EcranPrincipal.etat.Louée
-                    ConfirmationDisponible.Visible = True
-                Case EcranPrincipal.etat.ConfirmLouée
-            End Select
-
-        ElseIf ListBox1.SelectedItem = "Réparation" Then
-            Select Case EcranPrincipal.etatactuel
-                Case EcranPrincipal.etat.EcranPrincipal
-                Case EcranPrincipal.etat.EcranTableau
-                Case EcranPrincipal.etat.Disponible
+        Select Case EcranPrincipal.etatactuel
+            Case EcranPrincipal.etat.EcranPrincipal
+            Case EcranPrincipal.etat.EcranTableau
+            Case EcranPrincipal.etat.Disponible
+                If ListBox1.SelectedItem = "Disponible" Then
+                    'Pas possible
+                ElseIf ListBox1.SelectedItem = "Réparation" Then
                     EcranPrincipal.etatactuel = EcranPrincipal.etat.ConfirmRéparée
                     EtatRetour = EcranPrincipal.etat.Disponible
                     ConfirmationRéparation.Visible = True
-                Case EcranPrincipal.etat.ConfirmDisponible
-                Case EcranPrincipal.etat.Réparée
-                Case EcranPrincipal.etat.ConfirmRéparée
-                Case EcranPrincipal.etat.Louée
-                    EcranPrincipal.etatactuel = EcranPrincipal.etat.ConfirmRéparée
-                    EtatRetour = EcranPrincipal.etat.Louée
-                    ConfirmationRéparation.Visible = True
-                Case EcranPrincipal.etat.ConfirmLouée
-            End Select
-
-        ElseIf ListBox1.SelectedItem = "Loué" Then
-            Select Case EcranPrincipal.etatactuel
-                Case EcranPrincipal.etat.EcranPrincipal
-                Case EcranPrincipal.etat.EcranTableau
-                Case EcranPrincipal.etat.Disponible
+                ElseIf ListBox1.SelectedItem = "Loué" Then
                     EcranPrincipal.etatactuel = EcranPrincipal.etat.ConfirmLouée
                     EtatRetour = EcranPrincipal.etat.Disponible
                     ConfirmationLouée.Visible = True
-                Case EcranPrincipal.etat.ConfirmDisponible
-                Case EcranPrincipal.etat.Réparée
+                End If
+            Case EcranPrincipal.etat.ConfirmDisponible
+            Case EcranPrincipal.etat.Réparée
+                If ListBox1.SelectedItem = "Disponible" Then
+                    EcranPrincipal.etatactuel = EcranPrincipal.etat.ConfirmDisponible
+                    EtatRetour = EcranPrincipal.etat.Réparée
+                    ConfirmationDisponible.Visible = True
+                ElseIf ListBox1.SelectedItem = "Réparation" Then
+                    'Pas possible
+                ElseIf ListBox1.SelectedItem = "Loué" Then
                     EcranPrincipal.etatactuel = EcranPrincipal.etat.ConfirmLouée
                     EtatRetour = EcranPrincipal.etat.Réparée
                     ConfirmationLouée.Visible = True
-                Case EcranPrincipal.etat.ConfirmRéparée
-                Case EcranPrincipal.etat.Louée
-                Case EcranPrincipal.etat.ConfirmLouée
-            End Select
-        End If
+                End If
+            Case EcranPrincipal.etat.ConfirmRéparée
+            Case EcranPrincipal.etat.Louée
+                If ListBox1.SelectedItem = "Disponible" Then
+                    EcranPrincipal.etatactuel = EcranPrincipal.etat.ConfirmDisponible
+                    EtatRetour = EcranPrincipal.etat.Louée
+                    ConfirmationDisponible.Visible = True
+                ElseIf ListBox1.SelectedItem = "Réparation" Then
+                    EcranPrincipal.etatactuel = EcranPrincipal.etat.ConfirmRéparée
+                    EtatRetour = EcranPrincipal.etat.Louée
+                    ConfirmationRéparation.Visible = True
+                ElseIf ListBox1.SelectedItem = "Loué" Then
+                    'Pas possible
+                End If
+            Case EcranPrincipal.etat.ConfirmLouée
+        End Select
 
     End Sub
 

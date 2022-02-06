@@ -1,6 +1,6 @@
 ﻿Public Class ConfirmationDisponible
     Private Sub ConfirmationDisponible_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label1.Text = "Voulez vous passez en Disponible ?"
+        Label1.Text = "Voulez vous passer en Disponible ?"
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
